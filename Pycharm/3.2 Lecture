@@ -1,0 +1,62 @@
+# Functions
+# input(), int(), and type() are all functions that pull from other text
+
+# My code
+def print_total_inches():
+    num_feet = 12
+    num_inches = 5
+    print(num_feet // num_inches)
+    return
+
+# Instructor code
+def print_total_inches(num_feet, num_inches):
+    total_inches = (num_feet*12) + num_inches
+    print('Total inches:', total_inches)
+    return
+
+# function with no return statement returns a value of None
+def my_funct():
+    print("Kaleb")
+    print("Griepp")
+    return
+print(my_funct())
+
+# Convert Celsius to Fahrenheit
+# My code
+# formula is F = C * 9/5 + 32
+def temp_convert():
+    temp_c = float(input('Enter temperature in Celsius:'))
+    temp_f = temp_c * (9/5) + 32
+    print(temp_f)
+    return
+
+# Instructor code
+def c_to_f(c):
+    return c * 9 / 5 + 32
+
+temp_c = float(input('Enter temperature in Celsius: '))
+temp_f = c_to_f(temp_c)
+print('Fahrenheit:' , temp_f)
+
+######### Know this for the next exam
+# Why defining functions is important
+# 1: Improve program readability
+#
+# 2: Encourages modular program development – A
+# function has well-defined input and output. As such,
+# a programmer can focus on developing a particular
+# function of the program independently of other functions.
+#
+# 3. Reduces redundant code – Functions may be called from
+# multiple places in a program. 
+
+# 6.18 Step Counter and next lab password is 'leaves'
+# 6.18 Step Counter Code
+def steps_to_miles(user_steps):
+    return user_steps / 2000
+
+if __name__ == '__main__':
+    input_steps = int(input())
+    miles_walked = steps_to_miles(input_steps)
+    print('%0.2f' % miles_walked)
+
